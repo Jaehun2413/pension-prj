@@ -1,0 +1,62 @@
+@charset 'utf-8';
+
+.login-box {
+  width: 350px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 3px 1px #ccc;
+  padding: 50px 30px;
+  border-radius: 3px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 img {
+  width: 100px;
+}
+
+.form-box ul li * {
+  display: block;
+}
+
+.form-box ul li label {
+  font-weight: 400px;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-box ul li input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+  padding: 8px 5px;
+  border: 0;
+  border: 1px solid #d7d7d7;
+  outline: none;
+}
+
+.form-box ul li button {
+  width: 100%;
+  border: 0;
+  background-color: #036635;
+  padding: 12px 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-box ul li input:focus {
+  border: 2px solid #036635;
+}

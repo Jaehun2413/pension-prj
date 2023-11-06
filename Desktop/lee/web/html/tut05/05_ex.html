@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+
+        }
+
+        ul li,
+        ol li,
+        dl dt {
+            list-style: none;
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        ol li {
+            float: left;
+        }
+
+        dl dt {
+            display: inline-block;
+        }
+
+        a:hover {
+            color: red;
+            transition: 0.8s;
+        }
+
+        ul li {
+            background-color: #ff8282;
+            padding: 4px 8px;
+            border-radius: 3px;
+        }
+
+
+        ul li:hover {
+            background-color: red;
+            transform: 0.5s;
+
+        }
+
+        ul li a {
+            font-size: 14px;
+        }
+
+        ul li a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="">Menu1</a></li>
+        <li><a href="">Menu2</a></li>
+        <li><a href="">Menu3</a></li>
+    </ul>
+    <br />
+    <br />
+    <ol>
+        <li><a href="">Menu1</a></li>
+        <li><a href="">Menu2</a></li>
+        <li><a href="">Menu3</a></li>
+    </ol>
+    <br />
+    <br />
+
+    <dl>
+        <dt><a href="">Menu1</a></dt>
+        <dt><a href="">Menu2</a></dt>
+        <dt><a href="">Menu3</a></dt>
+    </dl>
+
+
+</body>
+
+</html>

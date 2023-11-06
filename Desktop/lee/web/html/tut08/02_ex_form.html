@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input</title>
+    <style>
+        input::placeholder {
+            color: red;
+            font-style: italic;
+        }
+        input[type='submit']{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <ul>
+            <li>
+                <label>검색어</label>
+                <input required placeholder="검색어 입력" maxlength="10" type="text" name="search" class="search"
+                    id="search">
+
+            </li>
+        </ul>
+        <input class="btn" value="검색"><br />
+        <!-- <button type="submit">search</button> -->
+    </form>
+    <script>
+        // function check() {
+        //     // 화면 경고창 띄우기 
+        //     //alert(document.querySelector("input[type=[text]]").value);
+        //     alert(document.querySelector("input[.#search]").value);
+
+        // }
+        // document.querySelector(".btn").onclick = check;
+
+        let search = document.querySelector(".search");
+        let btn = document.querySelector(".btn");
+        btn. onclick = function(){
+            alert(search.value);
+        }
+    </script>
+
+</body>
+
+</html>

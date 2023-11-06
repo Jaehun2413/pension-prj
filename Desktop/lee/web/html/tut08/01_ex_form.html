@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foam 예제</title>
+    <link rel="stylesheet" href="../tut06/css/reset.css">
+
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        form {
+            width: 300px;
+            background-color: #fff;
+            padding: 40px 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 2px #595959;
+        }
+
+        input {
+            border: 0;
+            border: 1px solid #e7e7e7;
+            padding: 6px 8px;
+            outline: 0;
+            font-size: 14px;
+        }
+
+        input:focus {
+            background-color: #f7f7f7;
+            font-size: 14px;
+        }
+
+        ul li {
+            width: 100%;
+            margin-bottom: 10px;
+
+
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="frm">
+        <h3>로그인</h3>
+        <ul>
+            <li> <label>아이디</label>
+                <input type="text" name="userid" class="userid" placeholder="아이디를 입력하세요">
+            </li>
+            <li> <label>비밀번호</label>
+                <input type="password" name="passwd" class="passwd" placeholder="비밀번호를 입력하세요 ">
+            </li>
+            <li> <label>비밀번호확인</label>
+                <input type="password" name="passwd2" class="passwd2" placeholder="비밀번호 확인을  입력하세요 ">
+            </li>
+
+
+
+
+
+            <li>
+                <input type="submit" value="로그인" class="btn">
+            </li>
+        </ul>
+
+
+    </form>
+
+    <!-- <script>
+
+        function frmCheck(e) {
+            e.preventDefault();
+
+            let userid = document.querySelector(".userid")
+            let passwd = document.querySelector(".passwd")
+            let passwd2 = document.querySelector(".passwd2")
+
+            if (userid.value == "") {
+                alert("아이디를 입력하세요.")
+                userid.focus();
+                return false;
+            }
+
+            if (!passwd.value) {
+                alert("비밀번호를 입력하세요")
+                passwd.focus();
+                return false
+            }
+            if (passwd.value != passwd2.value) {
+                alert("비밀번호가 일치하지 않습니다 . 확인하세요 ");
+                passwd.value = "";
+                passwd2.value = "";
+                return false;
+
+
+            }
+
+
+
+        }
+
+        document.querySelector(".btn").onclick = frmCheck;
+
+    </script> -->
+
+
+</body>
+
+</html>

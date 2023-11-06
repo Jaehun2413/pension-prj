@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        nav {
+            width: 1400px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding: 25px 0;
+        }
+
+        .nav-left a {
+            font-weight: bold;
+            margin-right: 50px;
+            font-size: 18px;
+        }
+
+        .nav-left a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            
+        }
+
+        .nav-right span {
+            font-weight: bold;
+        }
+
+        .nav-right .tel2 {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .img-box {
+            width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .img-box img:hover {
+            transform: scale(1.2);
+            transition: 0.3s;
+
+        }
+
+        .img-box img {
+            transition: 0.4s;
+        }
+
+        .notice {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .notice-title {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .notice-title p {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .notice-title h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        table tr th,
+        table tr td {
+            border: 1px solid #eee;
+            font-size: 18px;
+
+        }
+
+        table tr:nth-child(1) {
+            background-color: #eee;
+        }
+
+        table tr {
+            height: 60px;
+        }
+
+        .notice-table {
+            margin-top: 20px;
+
+        }
+
+        table tr th:nth-child(1) {
+            width: 7%;
+        }
+
+        table tr th:nth-child(3) {
+            width: 10%;
+        }
+
+        table tr th:nth-child(4) {
+            width: 7%;
+        }
+    </style>
+</head>
+
+<body>
+    <hr />
+    <nav>
+        <div class="nav-left">
+            <a href="https://g-sa.koreaisacademy.com/renewal2021/academy/centerinfo.asp" target="_blank">아카데미 소개</a>
+            <a href="https://g-sa.koreaisacademy.com/renewal2021/curriculum/curri_itbasic.asp" target="_blank">IT
+                교육과정</a>
+            <a href="https://g-sa.koreaisacademy.com/renewal2021/curriculum/curri_license.asp" target="_blank">자격증
+                취득과정</a>
+            <a href="https://g-sa.koreaisacademy.com/renewal2021/gookbi/gookbi_customer.asp" target="_blank">국비지원 과정</a>
+            <a href="https://g-sa.koreaisacademy.com/renewal2021/job/interview.asp" target="_blank">커뮤니티</a>
+        </div>
+        <div class="nav-right">
+            <span class="tel1">대표전화</span>
+            <span class="tel2">1588_5890</span>
+        </div>
+
+    </nav>
+    <hr />
+
+    <main>
+        <sectionclass="bg-img">
+            <div class="img-box">
+                <img src="images/img1.jpg" alt="메인이미지">
+            </div>
+            </section>
+            <section class="notice">
+                <div class="notice-title">
+                    <h1>공지사항</h1>
+                    <p>코리아아이티 아카데미</p>
+                </div>
+                <div class="notice-table">
+                    <table>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td style="text-align: left;">
+                                <Strong>
+                                    <i class="fa-brands fa-google"></i>공지사항 테스트 입니다
+                                </Strong>
+                            </td>
+                            <td>관리자</td>
+                            <td>2023.10.18</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a{
+            color: red;
+        } */
+        a[href ^= "#"]{
+            color: red;
+        }
+        a[href $= ".kr"]{
+            color: #0f0;
+        }
+        a[href *= "example"]{
+            color: tomato;
+            font-style: italic;
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="https://www.naver.com/">일치하는것</a></li>
+        <li><a href="#naver">시작하는것</a></li>
+        <li><a href="https://hrd.go.kr">끝나는것</a></li>
+        <li><a href="https://www.example.com/">포함되는것</a></li>
+    </ul>
+    
+</body>
+</html>
