@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table position</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* pc */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+
+
+        th {
+            background-color: #254de7;
+            color: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid#ccc;
+            text-align: center;
+            font-size: 14px;
+            padding: 15px 0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+
+
+
+
+
+
+        /* mobile 600px */
+        @media (max-width: 600px) {
+            thead {
+                display: none;
+
+            }
+
+            tbody,
+            tr,
+            td {
+                display: block;
+
+            }
+
+            td {
+                text-align: right;
+                position: relative;
+
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                padding-left: 20px;
+
+            }
+            tr{
+                margin-bottom: 20px8;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table>thread(첫줄),tbody(몸통)>tr(줄)>td(칸)> -->
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>no</th>
+                    <th>subject</th>
+                    <th>whriter</th>
+                    <th>regidate</th>
+                    <th>marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="no">4</td>
+                    <td data-label="subject">Notice board</td>
+                    <td data-label="whriter">admin</td>
+                    <td data-label="regidate">2023.10.11</td>
+                    <td data-label="marks">update/delete</td>
+                </tr>
+                <tr>
+                    <td data-label="no">3</td>
+                    <td data-label="subject">Notice board</td>
+                    <td data-label="whriter">admin</td>
+                    <td data-label="regidate">2023.10.11</td>
+                    <td data-label="marks">update/delete</td>
+                </tr>
+                <tr>
+                    <td data-label="no">2</td>
+                    <td data-label="subject">Notice board</td>
+                    <td data-label="whriter">admin</td>
+                    <td data-label="regidate">2023.10.11</td>
+                    <td data-label="marks">update/delete</td>
+                </tr>
+                <tr>
+                    <td data-label="no">1</td>
+                    <td data-label="subject">Notice board</td>
+                    <td data-label="whriter">admin</td>
+                    <td data-label="regidate">2023.10.11</td>
+                    <td data-label="marks">update/delete</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</body>
+
+</html>
